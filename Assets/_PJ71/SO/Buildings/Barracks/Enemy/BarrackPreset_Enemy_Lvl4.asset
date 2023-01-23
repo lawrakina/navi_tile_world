@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a10fa815b5743248645ce03efca2c22, type: 3}
+  m_Name: BarrackPreset_Enemy_Lvl4
+  m_EditorClassIdentifier: 
+  _buildRequirements:
+    Preset: {fileID: 11400000, guid: fb9fa0c47f2b3b042b0418a56ac9407c, type: 2}
+    Value: 15
+  RepairCost:
+    Preset: {fileID: 11400000, guid: fb9fa0c47f2b3b042b0418a56ac9407c, type: 2}
+    Value: 15
+  Prefab: {fileID: 3071651415337304954, guid: 03b8c665c32d50f4d9531b5d5b7337a8, type: 3}
+  Hp: 150
+  BreakingPercent: 0
+  "Conversion\u0421ost": 0
+  ConversionSpeed:
+    _isUpgradeable: 1
+    _parameterType: 3
+    _valueBase: 10
+  _doNotNeedInputResources: 1
+  ResourceRequirement:
+    Preset: {fileID: 0}
+    Value: 0
+  MaxCapacityOfInputInventory: 0
+  OutputResource: {fileID: 11400000, guid: 58fb064edb964934ab54b0bf188e42aa, type: 2}
+  ActorPreset: {fileID: 11400000, guid: 85dc7ceca54ed144d8bd36230d6b8c35, type: 2}

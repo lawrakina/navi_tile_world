@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4718b81557a44b69b9bd44d6bf0e8dca, type: 3}
+  m_Name: Damage
+  m_EditorClassIdentifier: 
+  Type: 1
+  Upgrades:
+  - _reward:
+      rid: 6537801882564559217
+    _price:
+      rid: 6537801882564559168
+  - _reward:
+      rid: 6537801882564559218
+    _price:
+      rid: 6537801882564559170
+  - _reward:
+      rid: 6537801882564559219
+    _price:
+      rid: 6537801882564559173
+  - _reward:
+      rid: 6537801882564559220
+    _price:
+      rid: 6537801882564559175
+  - _reward:
+      rid: 6537801882564559221
+    _price:
+      rid: 6537801882564559177
+  IsLoopedUpgrades: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 6537801882564559168
+      type: {class: CurrencyPrice, ns: NavySpade.Meta.Runtime.Economic.Prices.DifferentTypes, asm: Assembly-CSharp}
+      data:
+        <Currency>k__BackingField: {fileID: 11400000, guid: d51845f118395544caba0b69004736bf, type: 2}
+        <Count>k__BackingField: 10
+    - rid: 6537801882564559170
+      type: {class: CurrencyPrice, ns: NavySpade.Meta.Runtime.Economic.Prices.DifferentTypes, asm: Assembly-CSharp}
+      data:
+        <Currency>k__BackingField: {fileID: 11400000, guid: d51845f118395544caba0b69004736bf, type: 2}
+        <Count>k__BackingField: 20
+    - rid: 6537801882564559173
+      type: {class: CurrencyPrice, ns: NavySpade.Meta.Runtime.Economic.Prices.DifferentTypes, asm: Assembly-CSharp}
+      data:
+        <Currency>k__BackingField: {fileID: 11400000, guid: d51845f118395544caba0b69004736bf, type: 2}
+        <Count>k__BackingField: 30
+    - rid: 6537801882564559175
+      type: {class: CurrencyPrice, ns: NavySpade.Meta.Runtime.Economic.Prices.DifferentTypes, asm: Assembly-CSharp}
+      data:
+        <Currency>k__BackingField: {fileID: 11400000, guid: d51845f118395544caba0b69004736bf, type: 2}
+        <Count>k__BackingField: 40
+    - rid: 6537801882564559177
+      type: {class: CurrencyPrice, ns: NavySpade.Meta.Runtime.Economic.Prices.DifferentTypes, asm: Assembly-CSharp}
+      data:
+        <Currency>k__BackingField: {fileID: 11400000, guid: d51845f118395544caba0b69004736bf, type: 2}
+        <Count>k__BackingField: 50
+    - rid: 6537801882564559217
+      type: {class: FloatValue, ns: NavySpade.Meta.Usage.Upgrade.Scripts, asm: Assembly-CSharp}
+      data:
+        <Value>k__BackingField: 1
+    - rid: 6537801882564559218
+      type: {class: FloatValue, ns: NavySpade.Meta.Usage.Upgrade.Scripts, asm: Assembly-CSharp}
+      data:
+        <Value>k__BackingField: 1.2
+    - rid: 6537801882564559219
+      type: {class: FloatValue, ns: NavySpade.Meta.Usage.Upgrade.Scripts, asm: Assembly-CSharp}
+      data:
+        <Value>k__BackingField: 10
+    - rid: 6537801882564559220
+      type: {class: FloatValue, ns: NavySpade.Meta.Usage.Upgrade.Scripts, asm: Assembly-CSharp}
+      data:
+        <Value>k__BackingField: 40
+    - rid: 6537801882564559221
+      type: {class: FloatValue, ns: NavySpade.Meta.Usage.Upgrade.Scripts, asm: Assembly-CSharp}
+      data:
+        <Value>k__BackingField: 2

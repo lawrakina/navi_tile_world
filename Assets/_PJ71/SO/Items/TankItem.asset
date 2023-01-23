@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b48bf4bc362dc142b7fdc4a97653e4a, type: 3}
+  m_Name: TankItem
+  m_EditorClassIdentifier: 
+  Type: 6
+  Icon: {fileID: 0}
+  DisplayName: Tank
+  Prefab: {fileID: 7782322820593953584, guid: 6753b7f59f285f84a963196cc01981fb, type: 3}
+  CountPerItem: 1
+  SizeInStack: {x: 0, y: 1.5, z: 0}
+  ShowVisual: 1
+  IsCountInInventory: 1
+  FromPool: 1
+  PoolName: Tank_Pool

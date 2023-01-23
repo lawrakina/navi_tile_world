@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Stickman_Tutorial
+  m_Controller: {fileID: 9100000, guid: ad1828c44bc55a54f9b28b2ed9a47252, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 2da411af5950a384b9473d8aad8b0642, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2da411af5950a384b9473d8aad8b0642, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0edeea4009ff35b40b2d7150fbaf4854, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0edeea4009ff35b40b2d7150fbaf4854, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 697024267b9963049b77b97388f4123a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 89583f3156d76b2498477bfabcbc0578, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3c07366689e2f7947b41c065fd784b3b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 81bf975313ff882429027a6b7375e27d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 9db8584e1925f964ba810e04fc755bbb, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9db8584e1925f964ba810e04fc755bbb, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1ea8d7943ce0d27418c1290e2e5f66ad, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1ea8d7943ce0d27418c1290e2e5f66ad, type: 2}

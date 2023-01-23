@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74932716ca1f4beab93007342e1b894f, type: 3}
+  m_Name: Soldier
+  m_EditorClassIdentifier: 
+  Type: 1
+  Prefab: {fileID: 6318674949622991501, guid: c84bbf7453b2c374da0fa765c15f46ba, type: 3}
+  HP:
+    _isUpgradeable: 1
+    _parameterType: 2
+    _valueBase: 10
+  AmmoConfig: {fileID: 11400000, guid: e5b8023fcbde584478213215fab9b4e6, type: 2}
+  DelayBetweenShoots:
+    _isUpgradeable: 0
+    _parameterType: 0
+    _valueBase: 0.3
+  FireSpread: {x: 0, y: 0, z: 0}
+  ViewRadius:
+    _isUpgradeable: 0
+    _parameterType: 0
+    _valueBase: 10
+  AttackRadius:
+    _isUpgradeable: 0
+    _parameterType: 0
+    _valueBase: 8
+  MovementSpeed:
+    _isUpgradeable: 0
+    _parameterType: 0
+    _valueBase: 6
+  AngularSpeed: 1000

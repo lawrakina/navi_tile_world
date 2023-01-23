@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Floor
+  - IgnoreForScreenshot
+  - PlayerUnitSquad
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Floor
+  - Water
+  - UI
+  - Bones
+  - Tile
+  - Bullet
+  - Borders
+  - Triggers
+  - TileTrigger
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Icons
+    uniqueID: 2150113195
+    locked: 0
+  - name: Text
+    uniqueID: 558258753
+    locked: 0
+  - name: HP_Background
+    uniqueID: 2122534273
+    locked: 0
+  - name: HP_Layer
+    uniqueID: 3997969645
+    locked: 0
+  - name: Effect
+    uniqueID: 2499883669
+    locked: 0
+  - name: Lines
+    uniqueID: 139558397
+    locked: 0
+  - name: Fireball
+    uniqueID: 554944473
+    locked: 0

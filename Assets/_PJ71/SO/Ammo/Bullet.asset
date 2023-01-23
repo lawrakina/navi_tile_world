@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57474ea96244f3d90da90783b1ed431, type: 3}
+  m_Name: Bullet
+  m_EditorClassIdentifier: 
+  IsInstant: 0
+  MovementSpeed:
+    _isUpgradeable: 0
+    _parameterType: 0
+    _valueBase: 30
+  Prefab: {fileID: 442976118671777148, guid: b94244a51b393ca4ba4c2531b142bfed, type: 3}
+  FromPool: 0
+  PoolName: Bullet
+  Damage:
+    _isUpgradeable: 1
+    _parameterType: 1
+    _valueBase: 2
+  AOERadius:
+    _isUpgradeable: 0
+    _parameterType: 0
+    _valueBase: 0
+  PiercedObjects:
+    _isUpgradeable: 0
+    _parameterType: 0
+    _valueBase: 1
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  Effects: []
+  HasHitEffect: 0
+  HitEffect: {fileID: 0}
+  EffectFromPool: 0
+  EffectPoolName: 
+  references:
+    version: 2
+    RefIds: []

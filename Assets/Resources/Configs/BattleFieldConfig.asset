@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfb50693b23a5944a903c633d089a066, type: 3}
+  m_Name: BattleFieldConfig
+  m_EditorClassIdentifier: 
+  AmmoDestroyTime: 3
+  FlagCapturingTime: 30
+  BattleTeamPreset:
+  - Team: 0
+    Enemies: 0100000002000000
+  - Team: 1
+    Enemies: 00000000
+  - Team: 2
+    Enemies: 00000000

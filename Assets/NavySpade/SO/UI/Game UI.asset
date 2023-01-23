@@ -1,0 +1,563 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7793948872002740937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa0b0ab1105e4c08bcafc94828e78977, type: 3}
+  m_Name: Condition State
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 504, y: -328}
+  ports:
+    keys:
+    - Input
+    - True
+    - False
+    values:
+    - _fieldName: Input
+      _node: {fileID: -7793948872002740937}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: OnClose
+        node: {fileID: -7314373684886606453}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: True
+      _node: {fileID: -7793948872002740937}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Show
+        node: {fileID: -6874823166342824560}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: False
+      _node: {fileID: -7793948872002740937}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: -2509877831734338070}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Condition:
+    rid: 6537802082718843008
+  references:
+    version: 2
+    RefIds:
+    - rid: 6537802082718843008
+      type: {class: CanOpenItem, ns: Core.UI.Popups.Graph.Conditions, asm: Assembly-CSharp}
+--- !u!114 &-7314373684886606453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37220a33ef3f4bc993d2569355549989, type: 3}
+  m_Name: UI Popup
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 184, y: -376}
+  ports:
+    keys:
+    - Show
+    - OnClose
+    - ExitButtons
+    values:
+    - _fieldName: Show
+      _node: {fileID: -7314373684886606453}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: OnTimeout
+        node: {fileID: -3317670563022140276}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: OnClose
+      _node: {fileID: -7314373684886606453}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: -7793948872002740937}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ExitButtons
+      _node: {fileID: -7314373684886606453}
+      _typeQualifiedName: System.Collections.Generic.List`1[[Core.UI.Popups.Graph.PopupTransition,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Prefab: {fileID: 1473917603617115864, guid: 7c3e34f1df296f648b55163a0b9dfe68, type: 3}
+  ExitButtons: []
+--- !u!114 &-6874823166342824560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37220a33ef3f4bc993d2569355549989, type: 3}
+  m_Name: UI Popup
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 824, y: -392}
+  ports:
+    keys:
+    - Show
+    - OnClose
+    - ExitButtons
+    values:
+    - _fieldName: Show
+      _node: {fileID: -6874823166342824560}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: True
+        node: {fileID: -7793948872002740937}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: OnClose
+      _node: {fileID: -6874823166342824560}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: -1208158461998939950}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ExitButtons
+      _node: {fileID: -6874823166342824560}
+      _typeQualifiedName: System.Collections.Generic.List`1[[Core.UI.Popups.Graph.PopupTransition,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Prefab: {fileID: 8616692164999083211, guid: 2f719f98103766545bb37ac19d478dec, type: 3}
+  ExitButtons: []
+--- !u!114 &-6747539319497752259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ac3e018f43d47baa9844375528bb429, type: 3}
+  m_Name: Game States Listener State
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -264, y: -376}
+  ports:
+    keys:
+    - Output
+    values:
+    - _fieldName: Output
+      _node: {fileID: -6747539319497752259}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: StartTimer
+        node: {fileID: -3317670563022140276}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  GameState: 3
+--- !u!114 &-3317670563022140276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a300891e57442a5ab87ca2f8b4fcbea, type: 3}
+  m_Name: Wait Time
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -40, y: -376}
+  ports:
+    keys:
+    - StartTimer
+    - OnTimeout
+    values:
+    - _fieldName: StartTimer
+      _node: {fileID: -3317670563022140276}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Output
+        node: {fileID: -6747539319497752259}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: OnTimeout
+      _node: {fileID: -3317670563022140276}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Show
+        node: {fileID: -7314373684886606453}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Second: 1
+--- !u!114 &-2908237299343783037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ac3e018f43d47baa9844375528bb429, type: 3}
+  m_Name: Game States Listener State
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -264, y: -616}
+  ports:
+    keys:
+    - Output
+    values:
+    - _fieldName: Output
+      _node: {fileID: -2908237299343783037}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: StartTimer
+        node: {fileID: 3630958651184261936}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  GameState: 4
+--- !u!114 &-2509877831734338070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2671a409ebf9437ab6b5d4124c72a8a7, type: 3}
+  m_Name: Game States Invoker State
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 824, y: -152}
+  ports:
+    keys:
+    - Input
+    values:
+    - _fieldName: Input
+      _node: {fileID: -2509877831734338070}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: False
+        node: {fileID: -7793948872002740937}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  <GameState>k__BackingField: 6
+--- !u!114 &-1441750586628612542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37220a33ef3f4bc993d2569355549989, type: 3}
+  m_Name: UI Popup
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 184, y: -616}
+  ports:
+    keys:
+    - Show
+    - OnClose
+    - ExitButtons
+    values:
+    - _fieldName: Show
+      _node: {fileID: -1441750586628612542}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: OnTimeout
+        node: {fileID: 3630958651184261936}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: OnClose
+      _node: {fileID: -1441750586628612542}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: 9060434242746975082}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ExitButtons
+      _node: {fileID: -1441750586628612542}
+      _typeQualifiedName: System.Collections.Generic.List`1[[Core.UI.Popups.Graph.PopupTransition,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Prefab: {fileID: 3946132258426501672, guid: e75d0ac5727ea5a4caa6dc09bf756bad, type: 3}
+  ExitButtons: []
+--- !u!114 &-1208158461998939950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2671a409ebf9437ab6b5d4124c72a8a7, type: 3}
+  m_Name: Game States Invoker State
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1160, y: -328}
+  ports:
+    keys:
+    - Input
+    values:
+    - _fieldName: Input
+      _node: {fileID: -1208158461998939950}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: OnClose
+        node: {fileID: -6874823166342824560}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  <GameState>k__BackingField: 6
+--- !u!114 &-822487700028171453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 453d169b806941e9b7aabb12fd2d6d23, type: 3}
+  m_Name: Startup Scene
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -264, y: -120}
+  ports:
+    keys:
+    - Output
+    values:
+    - _fieldName: Output
+      _node: {fileID: -822487700028171453}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: 4878737003178034234}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ff3c4a0dfd45f398a570bad98fbb74, type: 3}
+  m_Name: Game UI
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -822487700028171453}
+  - {fileID: 4878737003178034234}
+  - {fileID: -6747539319497752259}
+  - {fileID: -7314373684886606453}
+  - {fileID: -3317670563022140276}
+  - {fileID: -2908237299343783037}
+  - {fileID: 3630958651184261936}
+  - {fileID: -1441750586628612542}
+  - {fileID: -6874823166342824560}
+  - {fileID: -1208158461998939950}
+  - {fileID: 9060434242746975082}
+  - {fileID: -7793948872002740937}
+  - {fileID: -2509877831734338070}
+--- !u!114 &3630958651184261936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a300891e57442a5ab87ca2f8b4fcbea, type: 3}
+  m_Name: Wait Time
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -40, y: -616}
+  ports:
+    keys:
+    - StartTimer
+    - OnTimeout
+    values:
+    - _fieldName: StartTimer
+      _node: {fileID: 3630958651184261936}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Output
+        node: {fileID: -2908237299343783037}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: OnTimeout
+      _node: {fileID: 3630958651184261936}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Show
+        node: {fileID: -1441750586628612542}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Second: 1
+--- !u!114 &4878737003178034234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2671a409ebf9437ab6b5d4124c72a8a7, type: 3}
+  m_Name: Game States Invoker State
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 184, y: -136}
+  ports:
+    keys:
+    - Input
+    values:
+    - _fieldName: Input
+      _node: {fileID: 4878737003178034234}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Output
+        node: {fileID: -822487700028171453}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  <GameState>k__BackingField: 2
+--- !u!114 &9060434242746975082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2671a409ebf9437ab6b5d4124c72a8a7, type: 3}
+  m_Name: Game States Invoker State
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 520, y: -568}
+  ports:
+    keys:
+    - Input
+    values:
+    - _fieldName: Input
+      _node: {fileID: 9060434242746975082}
+      _typeQualifiedName: Core.UI.Popups.Graph.StateTransition, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: OnClose
+        node: {fileID: -1441750586628612542}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  <GameState>k__BackingField: 5

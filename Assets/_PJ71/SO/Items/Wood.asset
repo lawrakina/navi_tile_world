@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b48bf4bc362dc142b7fdc4a97653e4a, type: 3}
+  m_Name: Wood
+  m_EditorClassIdentifier: 
+  Type: 1
+  Icon: {fileID: 21300000, guid: 425cada976653fc4babe9a5ecbb6589a, type: 3}
+  DisplayName: Wood
+  Prefab: {fileID: 2330697766027145817, guid: 71ef4f23895d39d40b87390bf1c23dbe, type: 3}
+  CountPerItem: 10
+  SizeInStack: {x: 0, y: 0.4, z: 0}
+  ShowVisual: 0
+  FromPool: 1
+  PoolName: Wood_Pool

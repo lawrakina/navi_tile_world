@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "236782057558",
+    "project_id": "navyspade-tileworld",
+    "storage_bucket": "navyspade-tileworld.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236782057558:android:8c5425b4ff3e9d9f6d23f7",
+        "android_client_info": {
+          "package_name": "com.NavySpade.TileWorld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236782057558-ahb2u0i42nc3su2j5ite8cq02ivrkkp5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiV4a62qcymxAaWyQgzBCAQQz51Mv5MsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236782057558-ahb2u0i42nc3su2j5ite8cq02ivrkkp5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

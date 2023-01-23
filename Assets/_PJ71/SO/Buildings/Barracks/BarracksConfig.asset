@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809501aad2cc47e98cd6d8bebfba7416, type: 3}
+  m_Name: BarracksConfig
+  m_EditorClassIdentifier: 
+  BuildingType: 1
+  _name: Barracks
+  Icon: {fileID: 21300000, guid: 58c528565dc0a4d42980f7cc81671643, type: 3}
+  _chestLockedIcon: {fileID: 0}
+  _chestUnlockIcon: {fileID: 21300000, guid: 005bac1e0a91ae2418fa017b21fd2d22, type: 3}
+  Presets:
+  - {fileID: 11400000, guid: 61df4d5fad57e074da118e8afce3e792, type: 2}
+  Upgrades:
+  - {fileID: 11400000, guid: 0b2845756bc707a4d9069a8e37789759, type: 2}
+  - {fileID: 11400000, guid: afab8783412690340b6caa5d10a864ba, type: 2}
+  - {fileID: 11400000, guid: 3f877f8b70482e343960667e3a73ab82, type: 2}

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a10fa815b5743248645ce03efca2c22, type: 3}
+  m_Name: FactoryPreset
+  m_EditorClassIdentifier: 
+  _buildRequirements:
+    Preset: {fileID: 11400000, guid: fb9fa0c47f2b3b042b0418a56ac9407c, type: 2}
+    Value: 3
+  RepairCost:
+    Preset: {fileID: 11400000, guid: fb9fa0c47f2b3b042b0418a56ac9407c, type: 2}
+    Value: 3
+  Prefab: {fileID: 5601307500241116218, guid: d38d5f2dd7361c44995311fdea393eb4, type: 3}
+  Hp: 200
+  BreakingPercent: 0
+  "Conversion\u0421ost": 0
+  ConversionSpeed:
+    _isUpgradeable: 1
+    _parameterType: 3
+    _valueBase: 15
+  _doNotNeedInputResources: 1
+  ResourceRequirement:
+    Preset: {fileID: 0}
+    Value: 0
+  MaxCapacityOfInputInventory: 0
+  OutputResource: {fileID: 11400000, guid: 5f752809f5315a14ab72a8ac8c5eccfd, type: 2}
+  ActorPreset: {fileID: 11400000, guid: ec22e697b1abbe946ac010e17fb8830c, type: 2}

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9886818f50a8a4a85d5c8c0840d96a, type: 3}
+  m_Name: LevelsConfig
+  m_EditorClassIdentifier: 
+  <GameSceneName>k__BackingField: GameScene
+  <UIScene>k__BackingField: UIScene
+  <Tutorial>k__BackingField: []
+  <Main>k__BackingField:
+  - {fileID: 11400000, guid: 636df5052ada08446af0dfb8e70bde7a, type: 2}
+  - {fileID: 11400000, guid: 695c09b8edcbcb244bf285b74e129995, type: 2}
+  - {fileID: 11400000, guid: b52807a1ca72e24479ad97deaab0b49c, type: 2}
+  - {fileID: 11400000, guid: e50b4f7f1c4d4f54e9df29ed55fe76c7, type: 2}
+  - {fileID: 11400000, guid: 6d98ec7a51fa37049921b69b14aa248f, type: 2}
+  - {fileID: 11400000, guid: ee073af3d97a9ee4ba577ae2504acf3b, type: 2}
+  - {fileID: 11400000, guid: 552c93103d5aad942ab340ce57054db1, type: 2}
+  - {fileID: 11400000, guid: 6322648bf49eb4943a62afe1d72ceb21, type: 2}

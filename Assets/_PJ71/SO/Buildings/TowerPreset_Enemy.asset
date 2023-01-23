@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65291c5b44fb4ad5bfba2f3fcb423d26, type: 3}
+  m_Name: TowerPreset_Enemy
+  m_EditorClassIdentifier: 
+  _buildRequirements:
+    Preset: {fileID: 11400000, guid: fb9fa0c47f2b3b042b0418a56ac9407c, type: 2}
+    Value: 15
+  RepairCost:
+    Preset: {fileID: 11400000, guid: fb9fa0c47f2b3b042b0418a56ac9407c, type: 2}
+    Value: 5
+  Prefab: {fileID: -3524136868350285135, guid: bcf61e35aa8ef6542854fb66210d1f91, type: 3}
+  Hp: 70
+  BreakingPercent: 0
+  AttackPriority: 0
+  ActorPreset: {fileID: 11400000, guid: db7a33f2f16a35845a25cb82583dc73b, type: 2}

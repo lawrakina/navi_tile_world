@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c0ce756d424fcbbe8e97b8fe0f96f7, type: 3}
+  m_Name: SawmillPreset
+  m_EditorClassIdentifier: 
+  _buildRequirements:
+    Preset: {fileID: 11400000, guid: fb9fa0c47f2b3b042b0418a56ac9407c, type: 2}
+    Value: 15
+  RepairCost:
+    Preset: {fileID: 11400000, guid: fb9fa0c47f2b3b042b0418a56ac9407c, type: 2}
+    Value: 1
+  Prefab: {fileID: 8525401459318586988, guid: b6c366148cae60c47a5dc8b5f7ba0525, type: 3}
+  Hp: 100
+  BreakingPercent: 0
+  "Conversion\u0421ost": 1
+  ConversionSpeed:
+    _isUpgradeable: 1
+    _parameterType: 3
+    _valueBase: 0.15
+  _doNotNeedInputResources: 0
+  ResourceRequirement:
+    Preset: {fileID: 11400000, guid: fb9fa0c47f2b3b042b0418a56ac9407c, type: 2}
+    Value: 1
+  MaxCapacityOfInputInventory: 30
+  OutputResource: {fileID: 11400000, guid: 8bb52e16d5862284ea3e567aec4a7646, type: 2}
